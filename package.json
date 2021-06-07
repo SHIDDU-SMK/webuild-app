@@ -1,7 +1,7 @@
 {
   "name": "react-package",
   "scripts": {
-    "start": "parcel index.html"
+    "build": "parcel build index.html"
   },
   "dependencies": {
     "anima-timeline": "^1.0.7",
