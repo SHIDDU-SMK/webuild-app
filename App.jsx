@@ -2,13 +2,17 @@ import "./App.css";
 import React from "react";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 import LandingPageDesktop from "./components/LandingPageDesktop";
+import Test from "./test";
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/:path(|landing-page-desktop)">
+        <Route exact path="/:path(|landing-page-desktop)">
           <LandingPageDesktop {...landingPageDesktopData} />
+        </Route>
+        <Route path="/test">
+          <Test/>
         </Route>
       </Switch>
     </Router>

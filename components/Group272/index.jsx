@@ -1,5 +1,7 @@
 import React from "react";
 import "./Group272.css";
+import CardCarousel from "../Cardcarousel";
+import "../Cardcarousel/cardcarousel.css";
 
 function Group272(props) {
   const { text92, ellipse1, name, text93, className } = props;
@@ -16,6 +18,7 @@ function Group272(props) {
           </div>
         </div>
       </div>
+      {/* <CardCarousel/> */}
     </div>
   );
 }

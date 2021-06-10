@@ -10,12 +10,18 @@ import Group1112 from "../Group1112";
 import Group1122 from "../Group1122";
 import Group113 from "../Group113";
 import Group272 from "../Group272";
-import Group129 from "../Group129";
+// import Group129 from "../Group129";
 import Button3 from "../Button3";
 import Frame12 from "../Frame12";
 import Group86 from "../Group86";
 import HeaderWithBackground from "../HeaderWithBackground";
 import "./LandingPageDesktop.css";
+// import Test from "../../test";
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+// import "../Cardcarousel/cardcarousel.css";
+import "../Carousel/carousel.css";
+import CardCarousel from "../Cardcarousel";
+import Carousel  from "../Carousel";
 
 function LandingPageDesktop(props) {
   const {
@@ -161,7 +167,10 @@ function LandingPageDesktop(props) {
               <div className="overlap-group-1">
                 <div className="group-37">
                   <div className="overlap-group-1">
-                    <img className="rectangle-2 animate-enter" src={rectangle2} />
+                   <div style={{marginTop:'25px'}}>
+                      <Carousel {...LandingPageDesktop}/>
+                     </div>
+                     
                     <div className="frame-16">
                       <div className="text-1 valign-text-middle animate-enter1">
                         <span>
@@ -170,7 +179,7 @@ function LandingPageDesktop(props) {
                           <span className="span2 ">{spanText3}</span>
                         </span>
                       </div>
-                      <p className="text-2 typographybody16-regular">{text2}</p>
+                      {/* <p className="text-2 typographybody16-regular">{text2}</p> */}
                       <Button4>{button4Props.children}</Button4>
                     </div>
                   </div>
@@ -235,7 +244,10 @@ function LandingPageDesktop(props) {
             />
             <Button22>{button22Props.children}</Button22>
             <div className="frame-37">
-              <img className="frame-36" src={frame36} />
+              <img className="frame-36" src={frame36} /><div className="group-129">
+              <div className="ellipse-99"></div>
+              <div className="ellipse-100"></div>
+            </div>
               <img className="frame-" src={frame37} />
               <img className="frame-" src={frame38} />
               <img className="frame-" src={frame39} />
@@ -333,7 +345,9 @@ function LandingPageDesktop(props) {
               text93={group2722Props.text93}
               className="group-27-1"
             />
-            <Group129 />
+            {/* <CardCarousel/> */}
+            
+            {/* <Group129 /> */}
             <div className="cost-estimator-bg" style={{ backgroundImage: `url(${costEstimatorBg})` }}>
               <div className="rectangle-63"></div>
             </div>
@@ -353,10 +367,10 @@ function LandingPageDesktop(props) {
             <img className="image-5" src={image5} />
             <img className="image-6" src={image6} />
             <img className="image-7" src={image7} />
-            <div className="group-129">
+            {/* <div className="group-129">
               <div className="ellipse-99"></div>
               <div className="ellipse-100"></div>
-            </div>
+            </div> */}
           </div>
           <div className="footer">
             <Group86 layer1={group86Props.layer1} group85={group86Props.group85} />
